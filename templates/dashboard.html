@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Telematics Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="showcase">
+    <h1 class="main-head"><span class="icon">🚗</span>Vehicle Analytics Dashboard</h1>
+    
+    <h2 class="fuelEfficiency"><i class="fa fa-tachometer-alt"></i>Fuel Efficiency: <span id="fuel-efficiency">Loading...</span> km/l</h2>
+    <p id="fuel-efficiency-trend"></p>
+
+    <h2 class="healthIssues"><i class="fa fa-exclamation-triangle"></i>Health Issues</h2>
+    <p id="health-issues">Loading...</p>
+
+    <h2 class="drivingBehaviours"><i class="fa fa-road"></i>Overall Driving Behaviour</h2>
+    <div id="overallDrivingBehaviour"></div>
+
+    <h2 class="gears"><i class="fa fa-cogs"></i>Gear Predictions<span class="side-heads">(gear predictions for last 10 readings)</span></h2>
+    <ul id="gear-predictions">Loading...</ul>
+
+    <h2 class="sharpTurns"><i class="fa fa-exclamation-circle"></i>Sharp Turn Alerts<span class="side-heads">(sharp turn alerts for last 10 readings)</span></h2>
+    <ul id="turn-alerts">Loading...</ul>
+
+    <h2 class="drivingBehaviours"><i class="fa fa-tachometer-alt"></i>Instantaneous Driving behaviour<span class="side-heads">(driving behaviour predictions for last 10 readings)</span></h2>
+    <ul id="driving-predictions">Loading...</ul>
+
+    <h2 class="drivingPatterns"><i class="fa fa-chart-line"></i>Driving Patterns</h2>
+    <canvas id="driving-patterns-chart" width="600" height="300"></canvas>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chart.js') }}"></script>
+</body>
+</html>
