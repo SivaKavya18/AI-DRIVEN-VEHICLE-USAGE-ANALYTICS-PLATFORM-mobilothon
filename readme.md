@@ -45,16 +45,16 @@ sqlite3 vehicle_data.db
 ```
 Table info:
 sqlite> PRAGMA table_info(vehicle_data);
-0|id|INTEGER|0||1
-1|speed|REAL|0||0
-2|rpm|REAL|0||0
-3|accData|REAL|0||0
-4|timestamp|TEXT|0||0
-5|battery_voltage|REAL|0||0
-6|tpos|REAL|0||0
-7|maf|REAL|0||0
-8|eload|REAL|0||0
-9|ctemp|REAL|0||0
+0|id|INTEGER|0||1 <br/>
+1|speed|REAL|0||0 <br/>
+2|rpm|REAL|0||0 <br/>
+3|accData|REAL|0||0 <br/>
+4|timestamp|TEXT|0||0 <br/>
+5|battery_voltage|REAL|0||0 <br/>
+6|tpos|REAL|0||0 <br/>
+7|maf|REAL|0||0 <br/>
+8|eload|REAL|0||0 <br/>
+9|ctemp|REAL|0||0 <br/>
 
 ## CONTRIBUTORS:
 [Siva Kavya](https://github.com/SivaKavya18)<br/>
