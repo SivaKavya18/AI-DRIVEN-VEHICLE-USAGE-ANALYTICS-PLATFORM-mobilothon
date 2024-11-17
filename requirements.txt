@@ -1,0 +1,9 @@
+Flask
+flask-cors
+flask-caching
+numpy
+pandas
+tensorflow
+joblib
+scikit-learn
+sqlite3
